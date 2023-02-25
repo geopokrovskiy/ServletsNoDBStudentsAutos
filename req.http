@@ -1,0 +1,76 @@
+
+###
+POST localhost:8080/StudentsServletNoDB/students
+content-type:application/json
+
+{
+  "age" : "28",
+  "num" : 1,
+  "fio" : "PGV",
+  "salary" : 1000
+}
+
+###
+POST localhost:8080/StudentsServletNoDB/students
+content-type:application/json
+
+{
+  "age" : "25",
+  "num" : 1,
+  "fio" : "NVA",
+  "salary" : 500
+}
+
+
+###
+GET localhost:8080/StudentsServletNoDB/students
+
+###
+GET localhost:8080/StudentsServletNoDB/students?id=2
+
+###
+PUT localhost:8080/StudentsServletNoDB/students
+content-type:application/json
+
+{
+  "id" : 1,
+  "age" : "27",
+  "num" : 10,
+  "fio" : "KKD",
+  "salary" : 100500
+}
+
+###
+PUT localhost:8080/StudentsServletNoDB/students
+content-type:application/json
+
+{
+  "id" : 5,
+  "age" : "27",
+  "num" : 10,
+  "fio" : "STM",
+  "salary" : 100500
+}
+
+###
+DELETE localhost:8080/StudentsServletNoDB/students?id=1
+
+###
+POST localhost:8080/StudentsServletNoDB/autos?brand=Suzuki&year=2020&power=750&student_id=1
+
+###
+POST localhost:8080/StudentsServletNoDB/autos?brand=Mitsubishi&year=2022&power=1000&student_id=2
+
+###
+GET localhost:8080/StudentsServletNoDB/autos
+
+###
+GET localhost:8080/StudentsServletNoDB/autos?id=4
+
+###
+PUT localhost:8080/StudentsServletNoDB/autos?brand=Toyota&year=2019&power=900&student_id=3&id=2
+
+###
+DELETE localhost:8080/StudentsServletNoDB/autos?id=2
+
+
